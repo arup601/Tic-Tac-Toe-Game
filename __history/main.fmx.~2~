@@ -15,7 +15,7 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 9
-    Text = '1'
+    Text = 'Button1'
   end
   object Button2: TButton
     Position.X = 200.000000000000000000
@@ -24,7 +24,7 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 8
-    Text = '2'
+    Text = 'Button1'
   end
   object Button3: TButton
     Position.X = 264.000000000000000000
@@ -33,7 +33,7 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 7
-    Text = '3'
+    Text = 'Button1'
   end
   object Button4: TButton
     Position.X = 136.000000000000000000
@@ -42,7 +42,7 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 6
-    Text = '4'
+    Text = 'Button1'
   end
   object Button5: TButton
     Position.X = 200.000000000000000000
@@ -51,7 +51,7 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 5
-    Text = '5'
+    Text = 'Button1'
   end
   object Button6: TButton
     Position.X = 264.000000000000000000
@@ -60,7 +60,7 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 4
-    Text = '6'
+    Text = 'Button1'
   end
   object Button7: TButton
     Position.X = 136.000000000000000000
@@ -69,7 +69,7 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
-    Text = '7'
+    Text = 'Button1'
   end
   object Button8: TButton
     Position.X = 200.000000000000000000
@@ -78,7 +78,7 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
-    Text = '8'
+    Text = 'Button1'
   end
   object Button9: TButton
     Position.X = 264.000000000000000000
@@ -87,6 +87,6 @@ object Form1: TForm1
     Size.Height = 49.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    Text = '9'
+    Text = 'Button1'
   end
 end
