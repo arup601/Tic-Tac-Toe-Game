@@ -24,6 +24,8 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
 {
     TButton *clickedButton = dynamic_cast<TButton*>(Sender);
 	clickedButton->Text = currentPlayerSymbol;
+    clickedButton->Enabled = false;
+	clickedButton->Opacity = 0.6;
 
 	if (currentPlayerSymbol == 'X') {
 		currentPlayerSymbol = 'O';
