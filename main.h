@@ -9,8 +9,9 @@
 #include <FMX.Controls.Presentation.hpp>
 #include <FMX.StdCtrls.hpp>
 #include <FMX.Types.hpp>
+#include <FMX.Objects.hpp>
 //---------------------------------------------------------------------------
-class TForm1 : public TForm
+class TGame : public TForm
 {
 __published:	// IDE-managed Components
 	TButton *Button1;
@@ -22,11 +23,15 @@ __published:	// IDE-managed Components
 	TButton *Button7;
 	TButton *Button8;
 	TButton *Button9;
+	TText *Text1;
+	TText *Text2;
+	TButton *Button10;
+	TText *Text3;
 private:	// User declarations
 public:		// User declarations
-	__fastcall TForm1(TComponent* Owner);
+	__fastcall TGame(TComponent* Owner);
 };
 //---------------------------------------------------------------------------
-extern PACKAGE TForm1 *Form1;
+extern PACKAGE TGame *Game;
 //---------------------------------------------------------------------------
 #endif
