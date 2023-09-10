@@ -139,7 +139,9 @@ object Game: TGame
     TextSettings.FontColor = claGreen
   end
   object resetButton: TButton
+    Enabled = False
     StyledSettings = [Family]
+    Opacity = 0.600000023841857900
     Position.X = 150.000000000000000000
     Position.Y = 377.000000000000000000
     Size.Width = 160.000000000000000000
