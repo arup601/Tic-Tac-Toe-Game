@@ -116,7 +116,7 @@ object Game: TGame
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     OnClick = ButtonClick
   end
-  object currentPlayer: TText
+  object headerDisplay: TText
     Position.X = 50.000000000000000000
     Position.Y = 32.000000000000000000
     Size.Width = 360.000000000000000000
@@ -127,7 +127,7 @@ object Game: TGame
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claForestgreen
   end
-  object Text2: TText
+  object gameState: TText
     Position.X = 120.000000000000000000
     Position.Y = 332.000000000000000000
     Size.Width = 220.000000000000000000
@@ -138,7 +138,7 @@ object Game: TGame
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claGreen
   end
-  object Button10: TButton
+  object resetButton: TButton
     StyledSettings = [Family]
     Position.X = 150.000000000000000000
     Position.Y = 377.000000000000000000
@@ -150,6 +150,7 @@ object Game: TGame
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claBrown
+    OnClick = resetButtonClick
   end
   object Text3: TText
     Position.X = 20.000000000000000000

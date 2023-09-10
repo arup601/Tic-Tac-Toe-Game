@@ -16,3 +16,25 @@ __fastcall TGame::TGame(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+
+
+
+
+void __fastcall TGame::ButtonClick(TObject *Sender)
+{
+    TButton *clickedButton = dynamic_cast<TButton*>(Sender);
+	clickedButton->Text = currentPlayerSymbol;
+    clickedButton->Enabled = false;
+	clickedButton->Opacity = 0.6;
+
+	if (currentPlayerSymbol == 'X') {
+		currentPlayerSymbol = 'O';
+		currentPlayer->Text = "Its Your Turn, Player : O";
+	}
+	else {
+		currentPlayerSymbol = 'X';
+		currentPlayer->Text = "Its Your Turn, Player : X";
+	}
+}
+//---------------------------------------------------------------------------
+
