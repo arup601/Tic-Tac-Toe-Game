@@ -23,10 +23,11 @@ __published:	// IDE-managed Components
 	TButton *Button7;
 	TButton *Button8;
 	TButton *Button9;
-	TText *Text1;
+	TText *currentPlayer;
 	TText *Text2;
 	TButton *Button10;
 	TText *Text3;
+	void __fastcall ButtonClick(TObject *Sender);
 private:	// User declarations
 public:		// User declarations
 	__fastcall TGame(TComponent* Owner);
