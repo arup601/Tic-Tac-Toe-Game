@@ -58,10 +58,12 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
 	{
 		if (currentPlayerSymbol == 'X'){
 			headerDisplay->Text = "Player X WON!";
+			gameState->Text = "Game Over";
 			ShowMessage("Player X WON!");
 		}
 		else{
 			headerDisplay->Text = "Player O WON!";
+			gameState->Text = "Game Over";
             ShowMessage("Player O WON!");
 		}
 		return;
@@ -82,6 +84,7 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
 	if (click_count == 9)
 	{
 		headerDisplay->Text = "Result is Draw";
+		gameState->Text = "Game Over";
 		ShowMessage("Result is Draw");
 		return;
 	}
@@ -131,6 +134,7 @@ void __fastcall TGame::resetButtonClick(TObject *Sender)
 
 	 currentPlayerSymbol = 'X';
 	 headerDisplay->Text = "Its Your Turn, Player : X";
+	 gameState->Text = "Game is Running";
 	 resetButton->Enabled = false;
 	 resetButton->Opacity = 0.6;
      click_count = 0;
