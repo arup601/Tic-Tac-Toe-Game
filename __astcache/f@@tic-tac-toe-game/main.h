@@ -32,6 +32,7 @@ __published:	// IDE-managed Components
 
 private:	// User declarations
 	bool TGame::CheckIsWinner();
+    void TGame::disableAllButtons();
 
 public:		// User declarations
 	__fastcall TGame(TComponent* Owner);

@@ -11,6 +11,36 @@ TGame *Game;
 char currentPlayerSymbol = 'X';
 int click_count = 0;
 
+void TGame::disableAllButtons()
+{
+	Button1->Enabled = false;
+	Button1->Opacity = 0.6;
+
+	Button2->Enabled = false;
+	Button2->Opacity = 0.6;
+
+	Button3->Enabled = false;
+	Button3->Opacity = 0.6;
+
+	Button4->Enabled = false;
+	Button4->Opacity = 0.6;
+
+	Button5->Enabled = false;
+	Button5->Opacity = 0.6;
+
+	Button6->Enabled = false;
+	Button6->Opacity = 0.6;
+
+	Button7->Enabled = false;
+	Button7->Opacity = 0.6;
+
+	Button8->Enabled = false;
+	Button8->Opacity = 0.6;
+
+	Button9->Enabled = false;
+	Button9->Opacity = 0.6;
+}
+
 bool TGame::CheckIsWinner()
 {
 	if (Button1->Text == Button2->Text && Button1->Text == Button3->Text && !Button1->Text.IsEmpty())
@@ -57,15 +87,16 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
     if (CheckIsWinner())
 	{
 		if (currentPlayerSymbol == 'X'){
-			headerDisplay->Text = "Player X WON!";
+			headerDisplay->Text = "Congratulations, X WON!";
 			gameState->Text = "Game Over";
 			ShowMessage("Player X WON!");
 		}
 		else{
-			headerDisplay->Text = "Player O WON!";
+			headerDisplay->Text = "Congratulations, O WON!";
 			gameState->Text = "Game Over";
             ShowMessage("Player O WON!");
 		}
+        disableAllButtons();
 		return;
 	}
 
