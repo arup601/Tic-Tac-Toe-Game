@@ -53,6 +53,16 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
     clickedButton->Enabled = false;
 	clickedButton->Opacity = 0.6;
 
+    if (CheckIsWinner())
+	{
+		if (currentPlayerSymbol == 'X'){
+			headerDisplay->Text = "Player X WON!";
+		}
+		else{
+			headerDisplay->Text = "Player O WON!";
+		}
+		return;
+	}
 
 	if (currentPlayerSymbol == 'X') {
 		currentPlayerSymbol = 'O';
