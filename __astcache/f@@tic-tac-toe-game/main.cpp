@@ -9,6 +9,7 @@
 #pragma resource "*.fmx"
 TGame *Game;
 char currentPlayerSymbol = 'X';
+int click_count = 0;
 
 bool TGame::CheckIsWinner()
 {
@@ -75,6 +76,17 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
 		currentPlayerSymbol = 'X';
 		headerDisplay->Text = "Its Your Turn, Player : X";
 	}
+
+	click_count++;
+
+	if (click_count == 9)
+	{
+		headerDisplay->Text = "Result is Draw";
+		ShowMessage("Result is Draw");
+		return;
+	}
+
+
 }
 
 
@@ -121,6 +133,7 @@ void __fastcall TGame::resetButtonClick(TObject *Sender)
 	 headerDisplay->Text = "Its Your Turn, Player : X";
 	 resetButton->Enabled = false;
 	 resetButton->Opacity = 0.6;
+     click_count = 0;
 
 }
 //---------------------------------------------------------------------------
