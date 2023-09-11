@@ -57,9 +57,11 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
 	{
 		if (currentPlayerSymbol == 'X'){
 			headerDisplay->Text = "Player X WON!";
+			ShowMessage("Player X WON!");
 		}
 		else{
 			headerDisplay->Text = "Player O WON!";
+            ShowMessage("Player O WON!");
 		}
 		return;
 	}
@@ -67,6 +69,7 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
 	if (currentPlayerSymbol == 'X') {
 		currentPlayerSymbol = 'O';
 		headerDisplay->Text = "Its Your Turn, Player : O";
+
 	}
 	else {
 		currentPlayerSymbol = 'X';
