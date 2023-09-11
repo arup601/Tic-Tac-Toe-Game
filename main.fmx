@@ -123,7 +123,7 @@ object Game: TGame
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
     Text = 'Its Your Turn, Player : X'
-    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.Size = 28.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claForestgreen
   end
