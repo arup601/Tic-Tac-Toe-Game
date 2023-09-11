@@ -29,9 +29,13 @@ __published:	// IDE-managed Components
 	TText *Text3;
 	void __fastcall ButtonClick(TObject *Sender);
 	void __fastcall resetButtonClick(TObject *Sender);
+
 private:	// User declarations
+	bool TGame::CheckIsWinner();
+
 public:		// User declarations
 	__fastcall TGame(TComponent* Owner);
+
 };
 //---------------------------------------------------------------------------
 extern PACKAGE TGame *Game;

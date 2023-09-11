@@ -10,6 +10,29 @@
 TGame *Game;
 char currentPlayerSymbol = 'X';
 
+bool TGame::CheckIsWinner()
+{
+	if (Button1->Text == Button2->Text && Button1->Text == Button3->Text && !Button1->Text.IsEmpty())
+		return true;
+	if (Button4->Text == Button5->Text && Button4->Text == Button6->Text && !Button4->Text.IsEmpty())
+		return true;
+	if (Button7->Text == Button8->Text && Button7->Text == Button9->Text && !Button7->Text.IsEmpty())
+		return true;
+	if (Button1->Text == Button4->Text && Button1->Text == Button7->Text && !Button1->Text.IsEmpty())
+		return true;
+	if (Button2->Text == Button5->Text && Button2->Text == Button8->Text && !Button2->Text.IsEmpty())
+		return true;
+	if (Button3->Text == Button6->Text && Button3->Text == Button9->Text && !Button3->Text.IsEmpty())
+		return true;
+	if (Button1->Text == Button5->Text && Button1->Text == Button9->Text && !Button1->Text.IsEmpty())
+		return true;
+	if (Button3->Text == Button5->Text && Button3->Text == Button7->Text && !Button3->Text.IsEmpty())
+		return true;
+
+	return false;
+}
+
+
 //---------------------------------------------------------------------------
 __fastcall TGame::TGame(TComponent* Owner)
 	: TForm(Owner)
@@ -29,6 +52,7 @@ void __fastcall TGame::ButtonClick(TObject *Sender)
 	clickedButton->Text = currentPlayerSymbol;
     clickedButton->Enabled = false;
 	clickedButton->Opacity = 0.6;
+
 
 	if (currentPlayerSymbol == 'X') {
 		currentPlayerSymbol = 'O';
