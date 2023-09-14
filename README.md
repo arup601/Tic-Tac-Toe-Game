@@ -34,6 +34,7 @@ This project is licensed under the Open Source License.
 
 ## Author
 Arup Roy
+Suwaeed Ul Islam Suwaeed
 
 ## Acknowledgments
 I would like to express my sincere gratitude to the ancient civilizations and individuals who laid the foundation for the timeless game of Tic Tac Toe, also known as Noughts and Crosses. This classic game has transcended generations and boundaries, bringing joy and challenge to people of all ages throughout history.
@@ -49,4 +50,5 @@ Thank you to the countless individuals who have cherished and perpetuated Tic Ta
 With appreciation,
 
 Arup Roy
+Suwaeed Ul Islam Suwaeed
 
