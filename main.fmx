@@ -9,7 +9,9 @@ object Game: TGame
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Button1: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 120.000000000000000000
     Position.Y = 104.000000000000000000
     Size.Width = 60.000000000000000000
@@ -21,7 +23,9 @@ object Game: TGame
     OnClick = ButtonClick
   end
   object Button2: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 200.000000000000000000
     Position.Y = 104.000000000000000000
     Size.Width = 60.000000000000000000
@@ -33,7 +37,9 @@ object Game: TGame
     OnClick = ButtonClick
   end
   object Button3: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 280.000000000000000000
     Position.Y = 104.000000000000000000
     Size.Width = 60.000000000000000000
@@ -45,7 +51,9 @@ object Game: TGame
     OnClick = ButtonClick
   end
   object Button4: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 120.000000000000000000
     Position.Y = 184.000000000000000000
     Size.Width = 60.000000000000000000
@@ -57,7 +65,9 @@ object Game: TGame
     OnClick = ButtonClick
   end
   object Button5: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 200.000000000000000000
     Position.Y = 184.000000000000000000
     Size.Width = 60.000000000000000000
@@ -69,7 +79,9 @@ object Game: TGame
     OnClick = ButtonClick
   end
   object Button6: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 280.000000000000000000
     Position.Y = 184.000000000000000000
     Size.Width = 60.000000000000000000
@@ -81,7 +93,9 @@ object Game: TGame
     OnClick = ButtonClick
   end
   object Button7: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 120.000000000000000000
     Position.Y = 264.000000000000000000
     Size.Width = 60.000000000000000000
@@ -93,7 +107,9 @@ object Game: TGame
     OnClick = ButtonClick
   end
   object Button8: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 200.000000000000000000
     Position.Y = 264.000000000000000000
     Size.Width = 60.000000000000000000
@@ -105,7 +121,9 @@ object Game: TGame
     OnClick = ButtonClick
   end
   object Button9: TButton
+    Enabled = False
     StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 280.000000000000000000
     Position.Y = 264.000000000000000000
     Size.Width = 60.000000000000000000
@@ -122,7 +140,7 @@ object Game: TGame
     Size.Width = 360.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
-    Text = 'Its Your Turn, Player : X'
+    Text = 'Welcome to Tic-Tac-Toe'
     TextSettings.Font.Size = 28.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claForestgreen
@@ -133,22 +151,20 @@ object Game: TGame
     Size.Width = 220.000000000000000000
     Size.Height = 37.000000000000000000
     Size.PlatformDefault = False
-    Text = 'Game is Running'
+    Text = 'Click the button below to Start'
     TextSettings.Font.Size = 15.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claGreen
   end
   object resetButton: TButton
-    Enabled = False
     StyledSettings = [Family]
-    Opacity = 0.600000023841857900
     Position.X = 150.000000000000000000
     Position.Y = 377.000000000000000000
     Size.Width = 160.000000000000000000
     Size.Height = 32.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 13
-    Text = 'Restart the Game'
+    Text = 'Start the Game'
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claBrown

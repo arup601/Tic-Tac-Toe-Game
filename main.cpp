@@ -167,8 +167,9 @@ void __fastcall TGame::resetButtonClick(TObject *Sender)
 	 headerDisplay->Text = "Its Your Turn, Player : X";
 	 gameState->Text = "Game is Running";
 	 resetButton->Enabled = false;
+	 resetButton->Text = "Restart the Game";
 	 resetButton->Opacity = 0.6;
-     click_count = 0;
+	 click_count = 0;
 
 }
 //---------------------------------------------------------------------------
