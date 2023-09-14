@@ -176,6 +176,8 @@ object Game: TGame
     Size.Width = 420.000000000000000000
     Size.Height = 34.000000000000000000
     Size.PlatformDefault = False
-    Text = 'Copyright '#169' 2023 | Developed By: Arup Roy | All Rights Reserved.'
+    Text = 
+      'Copyright '#169' 2023 | Developed By: Arup and Suwaeed | All Rights R' +
+      'eserved.'
   end
 end

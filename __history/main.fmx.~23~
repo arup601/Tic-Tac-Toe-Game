@@ -9,109 +9,154 @@ object Game: TGame
   FormFactor.Devices = [Desktop]
   DesignerMasterStyle = 0
   object Button1: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 120.000000000000000000
     Position.Y = 104.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 9
-    Text = '1'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
   object Button2: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 200.000000000000000000
     Position.Y = 104.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 8
-    Text = '2'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
   object Button3: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 280.000000000000000000
     Position.Y = 104.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 7
-    Text = '3'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
   object Button4: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 120.000000000000000000
     Position.Y = 184.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 6
-    Text = '4'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
   object Button5: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 200.000000000000000000
     Position.Y = 184.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 5
-    Text = '5'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
   object Button6: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 280.000000000000000000
     Position.Y = 184.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 4
-    Text = '6'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
   object Button7: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 120.000000000000000000
     Position.Y = 264.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 3
-    Text = '7'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
   object Button8: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 200.000000000000000000
     Position.Y = 264.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 2
-    Text = '8'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
   object Button9: TButton
+    Enabled = False
+    StyledSettings = [Family, FontColor]
+    Opacity = 0.600000023841857900
     Position.X = 280.000000000000000000
     Position.Y = 264.000000000000000000
     Size.Width = 60.000000000000000000
     Size.Height = 60.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 1
-    Text = '9'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = ButtonClick
   end
-  object Text1: TText
+  object headerDisplay: TText
     Position.X = 50.000000000000000000
     Position.Y = 32.000000000000000000
     Size.Width = 360.000000000000000000
     Size.Height = 50.000000000000000000
     Size.PlatformDefault = False
-    Text = 'Its Your Turn, Player : X'
-    TextSettings.Font.Size = 30.000000000000000000
+    Text = 'Welcome to Tic-Tac-Toe'
+    TextSettings.Font.Size = 28.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claForestgreen
   end
-  object Text2: TText
+  object gameState: TText
     Position.X = 120.000000000000000000
     Position.Y = 332.000000000000000000
     Size.Width = 220.000000000000000000
     Size.Height = 37.000000000000000000
     Size.PlatformDefault = False
-    Text = 'Game is Running'
+    Text = 'Click the button below to Start'
     TextSettings.Font.Size = 15.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claGreen
   end
-  object Button10: TButton
+  object resetButton: TButton
     StyledSettings = [Family]
     Position.X = 150.000000000000000000
     Position.Y = 377.000000000000000000
@@ -119,10 +164,11 @@ object Game: TGame
     Size.Height = 32.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 13
-    Text = 'Restart the Game'
+    Text = 'Start the Game'
     TextSettings.Font.Size = 16.000000000000000000
     TextSettings.Font.StyleExt = {00070000000000000004000000}
     TextSettings.FontColor = claBrown
+    OnClick = resetButtonClick
   end
   object Text3: TText
     Position.X = 20.000000000000000000
@@ -130,6 +176,8 @@ object Game: TGame
     Size.Width = 420.000000000000000000
     Size.Height = 34.000000000000000000
     Size.PlatformDefault = False
-    Text = 'Copyright '#169' 2023 | Developed by: Arup Roy | All rights reserved.'
+    Text = 
+      'Copyright '#169' 2023 | Developed By: Arup - Suwaeed | All Rights Res' +
+      'erved.'
   end
 end
